@@ -1,1 +1,7 @@
 <h1>¡Hola mundo!</h1>
+<p>La fecha de hoy es: <span id="fecha-actual"></span></p>
+
+<script>
+  const fecha = new Date();
+  document.getElementById("fecha-actual").textContent = fecha.toLocaleDateString();
+</script>
